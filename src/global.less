@@ -1,0 +1,96 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+// .ant-card {
+//   margin-top: 16px !important;
+// }
+
+.ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
+// 确认弹出框
+.confirmBox {
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+  .ant-modal-body {
+    .ant-modal-confirm-title {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .ant-modal-confirm-body {
+      text-align: center;
+
+      .ant-modal-confirm-content {
+        font-size: 16px;
+      }
+    }
+    .ant-modal-confirm-btns {
+      display: flex;
+      justify-content: center;
+      flex-flow: row-reverse!important;
+      float: inherit!important;
+      .ant-btn {
+        border-radius: 7px;
+        margin-left: 15px;
+      }
+      .ant-btn-primary {
+        background-color: #3873fa;
+        color: #fff;
+      }
+    }
+  }
+}

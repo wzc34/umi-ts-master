@@ -1,0 +1,24 @@
+
+.commonContent {
+    max-height: 46px;
+    transition: max-height .8s;
+    white-space: break-spaces;
+}
+.contentBox {
+    .commonContent;
+    width: 260px;
+    overflow: hidden;
+    
+}
+.contentBox.active, .iconBox.active {
+    max-height: 500px;
+}
+// .contentBox:hover {
+//     max-height: 500px;
+// }
+.iconBox {
+    .commonContent;
+    color: blue;
+    display: flex;
+    align-items: flex-end;
+}
